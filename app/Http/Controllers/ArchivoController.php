@@ -86,7 +86,7 @@ class ArchivoController extends AppBaseController
         $arc = $archivo->getArchivo();
 
         if (!$arc) {
-            Alert::error('Archivo no encontrado');
+            Flash::error('Archivo no encontrado');
             return redirect('archivos.index');
         }
 
